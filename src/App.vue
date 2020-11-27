@@ -1,8 +1,9 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <!-- TODO: 1111 -->
+      <div class="wrap"></div>
+      <el-button type="primary">111</el-button>
     </div>
     <router-view />
   </div>
@@ -16,7 +17,11 @@
   text-align: center;
   color: #2c3e50;
 }
-
+.wrap {
+  background: $primary-color;
+  height: 100px;
+  width: 100px;
+}
 #nav {
   padding: 30px;
 

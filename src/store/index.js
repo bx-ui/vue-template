@@ -3,9 +3,23 @@ import Vuex from "vuex";
 
 Vue.use(Vuex);
 
+import createPersistedState from "vuex-persistedstate";
+
+import user from "./user.js";
+
 export default new Vuex.Store({
-  state: {},
-  mutations: {},
-  actions: {},
-  modules: {}
+  modules: {
+    user
+  },
+  plugins: [
+    createPersistedState({
+      storage: window.sessionStorage,
+      reducer(val) {
+        return {
+          // 需要储存的数据
+          user: val.user
+        };
+      }
+    })
+  ]
 });
