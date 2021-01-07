@@ -2,8 +2,8 @@
   <div id="app">
     <div id="nav">
       <!-- TODO: 1111 -->
-      <div class="wrap"></div>
-      <el-button type="primary">111</el-button>
+      <!-- <div class="wrap font">121212</div> -->
+      <!-- <el-button type="primary">111</el-button> -->
     </div>
     <router-view />
   </div>
@@ -11,27 +11,7 @@
 
 <style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-.wrap {
-  background: $primary-color;
-  height: 100px;
-  width: 100px;
-}
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+  height: 100vh;
+  box-sizing: border-box;
 }
 </style>

@@ -22,8 +22,8 @@ request.interceptors.request.use(
   config => {
     NProgress.start();
     console.log(config);
+    config.headers["token"] = store.state.user.token;
     return config;
-    // config.headers["token"] = store.state.token;
   },
   error => {
     return Promise.reject(error);
@@ -55,9 +55,6 @@ request.interceptors.response.use(
           duration: 5 * 1000,
           message: "参数错误！！！"
         });
-        // console.log((store.state.user.isLogin = false));
-        // store.state.user.isLogin = false;
-        // store._actions["user/logout"]();
         break;
       case 500:
         Message({
