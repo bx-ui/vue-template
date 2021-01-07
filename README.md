@@ -13,8 +13,11 @@ axios配置，
 vuex-persistedstate，
 自动化样式导入，
 CSS Module，
-
+手写基础ui库
+登录页面
+js-cookie
+beforeEach路由拦截
 
 下版本修复内容：
 
-自定义样式ui库， 404页面
+nprogress， 404页面
