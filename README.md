@@ -4,7 +4,7 @@ vue基本通用框架
 包含功能
 
 TODO HIGHLIGHT，
-px2-rem，
+px2-rem，  https://www.cnblogs.com/doude/p/11405638.html
 Live Server，
 组件库elementui，
 axios配置，
